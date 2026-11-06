@@ -1645,3 +1645,154 @@ footer {
         transform: translateY(0);
     }
 }
+/* ==========================================
+   MOBILE FIX - PORTFOLIO
+========================================== */
+
+@media (max-width: 500px) {
+
+    /* Navbar */
+    .navbar {
+        width: 92%;
+        top: 12px;
+        padding: 8px 12px;
+        min-height: 58px;
+    }
+
+    /* Logo */
+    .logo {
+        width: auto;
+        height: auto;
+        overflow: visible;
+        font-size: 25px;
+    }
+
+    .logo img {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    /* Hamburger */
+    .menu-btn {
+        width: 42px;
+        height: 42px;
+        flex-shrink: 0;
+    }
+
+    /* Hero */
+    .hero {
+        width: 100%;
+        padding-top: 105px;
+        gap: 25px;
+    }
+
+    .hero-content {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .small-title {
+        font-size: 15px;
+    }
+
+    .hero h1 {
+        font-size: clamp(42px, 14vw, 60px);
+        letter-spacing: -2px;
+    }
+
+    .hero h2 {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    .hero-description {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    /* Buttons */
+    .hero-buttons {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .btn {
+        padding: 11px 18px;
+        font-size: 13px;
+    }
+
+    /* Social buttons */
+    .social-links {
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .social-links a {
+        width: 42px;
+        height: 42px;
+    }
+
+    /* Profile card */
+    .hero-card {
+        width: min(82vw, 300px);
+        height: 360px;
+        margin: 10px auto 0;
+    }
+
+    .profile-circle {
+        width: 135px;
+        height: 135px;
+    }
+
+    .hero-card-content {
+        margin-top: 20px;
+        padding: 0 15px;
+    }
+
+    .hero-card-content h3 {
+        font-size: 22px;
+    }
+
+    .hero-card-content p {
+        font-size: 11px;
+    }
+
+    /* Floating skill cards */
+    .floating-card {
+        font-size: 10px;
+        padding: 6px 9px;
+    }
+
+    .card-one {
+        left: -8px;
+        top: 55px;
+    }
+
+    .card-two {
+        right: -8px;
+        top: 125px;
+    }
+
+    .card-three {
+        left: -5px;
+        bottom: 45px;
+    }
+
+    /* Sections */
+    .section {
+        width: 92%;
+        padding-top: 100px;
+        padding-bottom: 70px;
+    }
+
+    /* Thank You */
+    .thank-you {
+        font-size: 24px;
+    }
+
+    .completion-box {
+        padding: 22px 15px;
+    }
+}
