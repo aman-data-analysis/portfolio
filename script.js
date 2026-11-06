@@ -373,3 +373,6 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
     });
 
 });
+function completePortfolio() {
+    document.getElementById("completion").classList.add("active");
+}

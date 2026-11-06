@@ -1605,3 +1605,43 @@ footer {
     object-fit: cover;
     display: block;
 }
+.thank-you {
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.thank-you:hover {
+    transform: scale(1.1);
+}
+
+.completion-box {
+    display: none;
+    text-align: center;
+    margin-top: 30px;
+    padding: 30px;
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+
+    animation: showBox 0.8s ease;
+}
+
+.completion-box.active {
+    display: block;
+}
+
+@keyframes showBox {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
