@@ -1796,3 +1796,58 @@ footer {
         padding: 22px 15px;
     }
 }
+.profile-img {
+    animation: zoomIn 1.5s ease-out;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+/* Falling Leaves */
+
+.leaves-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    pointer-events: none;
+    overflow: hidden;
+
+    z-index: 9999;
+}
+
+.leaf {
+    position: absolute;
+    top: -40px;
+
+    background: #4caf50;
+
+    border-radius: 100% 0 100% 0;
+
+    opacity: 0.8;
+
+    animation-name: fall;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fall {
+
+    from {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    to {
+        transform: translateY(110vh) rotate(720deg);
+    }
+}

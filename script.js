@@ -376,3 +376,30 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 function completePortfolio() {
     document.getElementById("completion").classList.add("active");
 }
+// Falling Leaves Effect
+
+const leavesContainer = document.createElement("div");
+leavesContainer.className = "leaves-container";
+document.body.appendChild(leavesContainer);
+
+function createLeaf() {
+    const leaf = document.createElement("div");
+    leaf.classList.add("leaf");
+
+    leaf.style.left = Math.random() * 100 + "vw";
+
+    const size = Math.random() * 12 + 15;
+    leaf.style.width = size + "px";
+    leaf.style.height = size * 1.4 + "px";
+
+    const duration = Math.random() * 5 + 6;
+    leaf.style.animationDuration = duration + "s";
+
+    leavesContainer.appendChild(leaf);
+
+    setTimeout(() => {
+        leaf.remove();
+    }, duration * 1000);
+}
+
+setInterval(createLeaf, 600);
